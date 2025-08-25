@@ -1,14 +1,20 @@
 import type { MetaFunction, LinksFunction } from "@remix-run/node";
-import { Link } from "@remix-run/react";
+import { Link, useNavigation } from "@remix-run/react";
 
-import styles from "~/styles//main.css";
+import styles from "~/styles/index.css";
 
 export default function Index() {
+
+  const navigation = useNavigation();
+  console.log('navigation: ', navigation)
   return (
     <>
       <div>
         <h2>Links</h2>
         <Link to={"contact"}>Contact</Link>
+        <br />
+        <Link to={"form_examples/single_form"}>Forms examples</Link>
+
       </div>
       <hr />
     </>
