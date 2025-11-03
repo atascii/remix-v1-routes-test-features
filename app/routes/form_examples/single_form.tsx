@@ -56,8 +56,8 @@ export const action: ActionFunction = async ({ request }) => {
 
   // Validaciones por campo
   const fieldErrors = {
-    title: validateTitle(title),
-    content: validateContent(content),
+    title: validateTitle(title), // si no hay error, validateTitle retorna null
+    content: validateContent(content), // si no hay error, validateTitle retorna null
   };
 
   const fields = {

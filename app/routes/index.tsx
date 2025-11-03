@@ -11,6 +11,8 @@ export default function Index() {
     <>
       <div>
         <h2>Links</h2>
+        <Link to={"/content_example_simple"}>Content loading simple</Link>
+        <br />
         <Link to={"contact"}>Contact</Link>
         <br />
         <Link to={"form_examples/single_form"}>Forms examples</Link>
